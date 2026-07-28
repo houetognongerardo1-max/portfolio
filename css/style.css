@@ -302,27 +302,6 @@ h1, h2, h3, h4 { font-family: var(--ff-heading); line-height: 1.15; letter-spaci
 .portrait__frame--fallback .portrait__img { display: none; }
 .portrait__frame--fallback .portrait__fallback-text { display: flex; }
 
-.float-card {
-  position: absolute; display: flex; flex-direction: column; gap: 2px;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm);
-  padding: 10px 16px; box-shadow: var(--shadow-sm); animation: floatY 5s ease-in-out infinite;
-}
-.float-card strong { font-family: var(--ff-heading); font-size: 1.15rem; }
-.float-card small { color: var(--text-muted); font-size: 0.75rem; }
-.float-card--top { top: 6%; right: -6%; animation-delay: -1s; }
-.float-card--bottom { bottom: 8%; left: -10%; animation-delay: -3s; }
-@keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-
-.chip {
-  position: absolute; font-family: var(--ff-heading); font-weight: 600; font-size: 0.75rem;
-  padding: 6px 12px; border-radius: 100px; border: 1px solid var(--border); background: var(--surface);
-  box-shadow: var(--shadow-sm); animation: floatY 6s ease-in-out infinite;
-}
-.chip--html { top: 2%; left: 4%; color: #fb923c; animation-delay: -.5s; }
-.chip--css { bottom: 22%; right: -4%; color: #38bdf8; animation-delay: -2s; }
-.chip--js { top: 30%; right: -10%; color: #facc15; animation-delay: -4s; }
-.chip--php { bottom: -2%; left: 18%; color: #a78bfa; animation-delay: -1.5s; }
-
 .scroll-cue {
   position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%);
   width: 26px; height: 42px; border: 2px solid var(--border); border-radius: 100px;
@@ -406,6 +385,7 @@ h1, h2, h3, h4 { font-family: var(--ff-heading); line-height: 1.15; letter-spaci
 }
 .project-card__body h3 { font-size: 1.3rem; margin-bottom: 10px; }
 .project-card__body > p { color: var(--text-muted); margin-bottom: 16px; }
+.project-card__link { margin-top: 18px; }
 .feature-list { margin-bottom: 20px; display: grid; gap: 8px; }
 .feature-list li { position: relative; padding-left: 22px; font-size: 0.9rem; color: var(--text-muted); }
 .feature-list li::before {
@@ -537,9 +517,6 @@ h1, h2, h3, h4 { font-family: var(--ff-heading); line-height: 1.15; letter-spaci
   .skills__grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
   .info-list > div { grid-template-columns: 100px 1fr; font-size: 0.88rem; }
-  .float-card { padding: 8px 12px; }
-  .float-card strong { font-size: 1rem; }
-  .chip { font-size: 0.68rem; padding: 5px 10px; }
   .contact-form { padding: 24px; }
 }
 
