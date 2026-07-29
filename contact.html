@@ -113,7 +113,11 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" data-reveal novalidate>
+        <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-reveal novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp-field" aria-hidden="true">
+            <label>Ne pas remplir ce champ : <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
           <div class="form-row">
             <label for="name">Nom complet</label>
             <input type="text" id="name" name="name" placeholder="Votre nom" required>

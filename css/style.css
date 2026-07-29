@@ -463,6 +463,7 @@ h1, h2, h3, h4 { font-family: var(--ff-heading); line-height: 1.15; letter-spaci
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 32px; display: grid; gap: 20px; align-content: start;
 }
+.hp-field { display: none; }
 .form-row { display: grid; gap: 8px; }
 .form-row label { font-size: 0.9rem; font-weight: 500; }
 .form-row input, .form-row textarea {

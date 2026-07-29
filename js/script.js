@@ -215,17 +215,30 @@
       return;
     }
 
-    const subject = encodeURIComponent(`Contact portfolio — ${nameField.value.trim()}`);
-    const body = encodeURIComponent(
-      `${messageField.value.trim()}\n\n— ${nameField.value.trim()} (${emailField.value.trim()})`
-    );
-    window.location.href = `mailto:houetognongerardo1@gmail.com?subject=${subject}&body=${body}`;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn?.setAttribute("disabled", "true");
 
-    if (formStatus) {
-      formStatus.textContent = "Votre client email va s'ouvrir pour finaliser l'envoi. Merci !";
-      formStatus.className = "form-status is-success";
-    }
-    form.reset();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    })
+      .then(() => {
+        if (formStatus) {
+          formStatus.textContent = "Merci ! Votre message a bien été envoyé.";
+          formStatus.className = "form-status is-success";
+        }
+        form.reset();
+      })
+      .catch(() => {
+        if (formStatus) {
+          formStatus.textContent = "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.";
+          formStatus.className = "form-status is-error";
+        }
+      })
+      .finally(() => {
+        submitBtn?.removeAttribute("disabled");
+      });
   });
 
   /* ---------- Footer year ---------- */
