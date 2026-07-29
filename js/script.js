@@ -63,24 +63,20 @@
   navOverlay?.addEventListener("click", closeNav);
   document.querySelectorAll("[data-nav]").forEach((link) => link.addEventListener("click", closeNav));
 
-  /* ---------- Scrollspy ---------- */
-  const sections = document.querySelectorAll("main section[id]");
+  /* ---------- Active nav link (site multi-pages) ---------- */
   const navLinks = document.querySelectorAll(".nav__link");
+  const pageName = (path) => {
+    const file = path.split("/").pop().replace(/\.html$/i, "");
+    return file === "" ? "index" : file;
+  };
+  const currentPage = pageName(window.location.pathname);
 
-  const spyObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute("id");
-          navLinks.forEach((link) => {
-            link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
-          });
-        }
-      });
-    },
-    { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
-  );
-  sections.forEach((section) => spyObserver.observe(section));
+  navLinks.forEach((link) => {
+    const linkPage = pageName(link.getAttribute("href") || "");
+    const isActive = linkPage === currentPage;
+    link.classList.toggle("active", isActive);
+    if (isActive) link.setAttribute("aria-current", "page");
+  });
 
   /* ---------- Reveal on scroll ---------- */
   const revealTargets = document.querySelectorAll("[data-reveal]");

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compétences — Gérardo Houetognon</title>
+<meta name="description" content="Compétences techniques de Gérardo Houetognon : HTML5, CSS3, JavaScript, PHP, MySQL, WordPress, Git.">
+<meta name="theme-color" content="#0b0f19">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Compétences — Gérardo Houetognon">
+<meta property="og:description" content="Compétences techniques de Gérardo Houetognon : HTML5, CSS3, JavaScript, PHP, MySQL, WordPress, Git.">
+<meta property="og:image" content="assets/images/profile.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f19'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial,sans-serif' font-weight='700' fill='%2338bdf8' text-anchor='middle'%3EGH%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <span class="preloader__mark">GH</span>
+</div>
+
+<div class="bg-decor" aria-hidden="true">
+  <span class="blob blob--one"></span>
+  <span class="blob blob--two"></span>
+  <span class="grid-overlay"></span>
+</div>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Gérardo<span class="dot">.</span></a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link" data-nav>Accueil</a></li>
+        <li><a href="apropos.html" class="nav__link" data-nav>À propos</a></li>
+        <li><a href="competences.html" class="nav__link" data-nav>Compétences</a></li>
+        <li><a href="projets.html" class="nav__link" data-nav>Projets</a></li>
+        <li><a href="parcours.html" class="nav__link" data-nav>Parcours</a></li>
+        <li><a href="contact.html" class="nav__link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Changer de thème">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <a href="contact.html" class="btn btn--sm btn--primary header__cta">Me contacter</a>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main id="main">
+
+  <!-- COMPETENCES -->
+  <section class="section section--top" id="competences">
+    <div class="container">
+      <p class="section-tag" data-reveal>Compétences</p>
+      <h2 class="section-title" data-reveal>Ce que je maîtrise</h2>
+      <p class="section-sub" data-reveal>Un socle solide en front-end, une base back-end fonctionnelle, et les bons outils pour livrer.</p>
+
+      <div class="skills__grid">
+        <div class="skill-card" data-reveal>
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m8 3-6 9 6 9M16 3l6 9-6 9"/></svg>
+          </div>
+          <h3>Front-End</h3>
+          <p>Construction d'interfaces responsives, claires et agréables à utiliser.</p>
+          <ul class="tag-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+          </div>
+          <h3>Back-End</h3>
+          <p>Logique serveur, bases de données et gestion de contenu.</p>
+          <ul class="tag-list">
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>WordPress</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="12" r="3"/><path d="M6 9v6M8.5 7.5 15.5 10.5M8.5 16.5 15.5 13.5"/></svg>
+          </div>
+          <h3>Déploiement &amp; Outils</h3>
+          <p>Suivi de version et mise en ligne de projets.</p>
+          <ul class="tag-list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Hébergement web</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo">Gérardo<span class="dot">.</span></a>
+    <p>© <span id="year"></span> Gérardo Houetognon. Tous droits réservés.</p>
+    <div class="footer__socials">
+      <a href="mailto:houetognongerardo1@gmail.com" aria-label="Email">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/gerardo-houetognon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

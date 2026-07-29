@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parcours — Gérardo Houetognon</title>
+<meta name="description" content="Formation et expériences de Gérardo Houetognon, développeur web en formation à Cotonou, Bénin.">
+<meta name="theme-color" content="#0b0f19">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Parcours — Gérardo Houetognon">
+<meta property="og:description" content="Formation et expériences de Gérardo Houetognon, développeur web en formation à Cotonou, Bénin.">
+<meta property="og:image" content="assets/images/profile.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f19'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial,sans-serif' font-weight='700' fill='%2338bdf8' text-anchor='middle'%3EGH%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <span class="preloader__mark">GH</span>
+</div>
+
+<div class="bg-decor" aria-hidden="true">
+  <span class="blob blob--one"></span>
+  <span class="blob blob--two"></span>
+  <span class="grid-overlay"></span>
+</div>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Gérardo<span class="dot">.</span></a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link" data-nav>Accueil</a></li>
+        <li><a href="apropos.html" class="nav__link" data-nav>À propos</a></li>
+        <li><a href="competences.html" class="nav__link" data-nav>Compétences</a></li>
+        <li><a href="projets.html" class="nav__link" data-nav>Projets</a></li>
+        <li><a href="parcours.html" class="nav__link" data-nav>Parcours</a></li>
+        <li><a href="contact.html" class="nav__link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Changer de thème">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <a href="contact.html" class="btn btn--sm btn--primary header__cta">Me contacter</a>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main id="main">
+
+  <!-- PARCOURS -->
+  <section class="section section--top" id="parcours">
+    <div class="container">
+      <p class="section-tag" data-reveal>Parcours</p>
+      <h2 class="section-title" data-reveal>Formation &amp; expériences</h2>
+
+      <div class="timeline">
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__icon timeline__icon--edu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+          </div>
+          <div class="timeline__content">
+            <span class="timeline__period">Depuis octobre — en cours (8 mois)</span>
+            <h3>Formation professionnelle en développement web</h3>
+            <p class="timeline__place">EIG Bénin</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__icon timeline__icon--work">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="timeline__content">
+            <h3>Participant au projet Mondallas Events</h3>
+            <p>Participation aux activités et missions confiées lors de l'événement. Contribution au bon déroulement organisationnel et logistique.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__icon timeline__icon--work">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="timeline__content">
+            <h3>Participant au projet SEGURO HOTEL</h3>
+            <p>Participation aux ateliers et activités proposés dans le cadre du programme. Mise en pratique des compétences acquises en développement web.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__icon timeline__icon--edu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+          </div>
+          <div class="timeline__content">
+            <h3>EIG Booster</h3>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__icon timeline__icon--edu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+          </div>
+          <div class="timeline__content">
+            <h3>BEPC</h3>
+            <p class="timeline__place">CEG Le Nokoué, Cotonou — Bénin</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo">Gérardo<span class="dot">.</span></a>
+    <p>© <span id="year"></span> Gérardo Houetognon. Tous droits réservés.</p>
+    <div class="footer__socials">
+      <a href="mailto:houetognongerardo1@gmail.com" aria-label="Email">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/gerardo-houetognon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
